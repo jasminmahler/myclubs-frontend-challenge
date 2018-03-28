@@ -1,28 +1,24 @@
+/** Begin App **/
 .App {
+  border: 5px solid rgb(235, 59, 52);
+}
+/** End App **/
+
+/** Begin Header **/
+.Header {
+  background-color: rgb(34, 31, 42);
+  padding: 28px 23px 18px 25px;
+}
+
+.Header-logo {
+  width: 150px;
+}
+/** End Header **/
+
+/** Begin Footer **/
+.Footer {
   text-align: center;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
+/** End Footer **/
