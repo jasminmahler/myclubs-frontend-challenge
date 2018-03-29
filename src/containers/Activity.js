@@ -11,27 +11,15 @@ import * as Actions from '../actions';
 
 class Activity extends React.Component {
   componentDidMount() {
-    // TODO: fetch data from backend
+    this.props.loadActivity();
   }
 
   render() {
-    const {isBooked, bookActivity} = this.props;
+    const { activity, isBooked, bookActivity } = this.props;
 
-    // initial test data
-    const activity = {
-      city:"Vösendorf",
-      description:"a high-intensity fitness programme incorporating elements from several sports and types of exercise.",
-      imageFile: "https://files.myclubs.com/img_2c8352871c8e12db4244dd016d746377.jpg",
-      infoBox:"For advanced users only, please be early, bring a towel",
-      location:{
-        latitude:48.1141557,
-        longitude:16.318269800000053
-      },
-      name:"Crossfit",
-      partner:"MyClubs Crossfit Studio",
-      street:"Nordring 8",
-      zipCode:"2334"
-    };
+    if(activity == null){
+      return null;
+    }
 
     return (
       <div>
@@ -51,6 +39,7 @@ class Activity extends React.Component {
 
 function mapStateToProps(state) {
   return {
+    activity: state.activity,
     isBooked: state.isBooked
   };
 }
