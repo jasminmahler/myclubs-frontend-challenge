@@ -7,4 +7,4 @@ export default function Modal() {
           <p>Your booking was successful!</p>
     </div>
   ); 
-};
+}

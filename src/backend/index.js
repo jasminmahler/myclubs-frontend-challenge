@@ -2,8 +2,8 @@ import 'isomorphic-fetch';
 
 export function fetchJson(url) {
   return fetch(url)
-    .then(response => response.json())
-    .catch(ex => {
+    .then((response) => response.json())
+    .catch((ex) => {
       console.error('parsing failed', ex);
     });
 }

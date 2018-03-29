@@ -27,9 +27,9 @@ class Activity extends React.Component {
         <Map 
           {...activity}
           googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyATPxE5CjvauOTdNkC5UWrrrLNhfBI3ftk&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: "100%" }} />}
+          loadingElement={<div style={{ height: '100%' }} />}
           containerElement={<div className="Activity-map" />}
-          mapElement={<div style={{ height: "100%" }} />} />
+          mapElement={<div style={{ height: '100%' }} />} />
         <Booking isBooked={isBooked} onClickHandler={() => bookActivity()} />
         { isBooked ? <Modal /> : null }
       </div>

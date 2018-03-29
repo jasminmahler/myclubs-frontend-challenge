@@ -45,13 +45,12 @@
   font-size: 16px;
   background-color: rgb(255, 255, 255);
   color: rgb(164, 164, 164);
-  min-height: 440px;
   overflow-y: scroll;
 }
 
 @media(min-width: 768px) {
   .Details{
-    height: 626px;
+    height: calc(100vh - 215px);
     width: 50%;
     display: inline-block;
     vertical-align: top;

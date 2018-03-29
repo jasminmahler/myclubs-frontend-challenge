@@ -8,7 +8,7 @@
   .Activity-map{
     width: 50%;
     vertical-align: top;
-    height: 691px;
+    height: calc(100vh - 150px);
     display: inline-block;
     float: right;
   }
