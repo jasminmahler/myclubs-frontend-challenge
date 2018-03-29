@@ -1,0 +1,16 @@
+/** Begin Activity **/
+.Activity-map{
+    display: none;
+    clear: both;
+}
+
+@media(min-width: 768px) {
+  .Activity-map{
+    width: 50%;
+    vertical-align: top;
+    height: calc(100vh - 150px);
+    display: inline-block;
+    float: right;
+  }
+}
+/** End Activitiy **/
